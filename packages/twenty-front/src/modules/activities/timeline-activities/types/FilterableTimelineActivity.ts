@@ -8,6 +8,4 @@ export type FilterableTimelineActivity = Pick<TimelineActivity, 'properties'> &
       | 'timelineActivityTypeId'
       | 'timelineActivityTypeSnapshot'
     >
-  > & {
-    name?: string | null;
-  };
+  >;

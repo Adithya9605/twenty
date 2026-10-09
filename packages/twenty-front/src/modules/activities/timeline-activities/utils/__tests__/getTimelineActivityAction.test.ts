@@ -43,13 +43,4 @@ describe('getTimelineActivityAction', () => {
       ),
     ).toBeNull();
   });
-
-  it('falls back to the legacy name for a row written during a rolling upgrade', () => {
-    expect(
-      getTimelineActivityAction(
-        { name: 'company.updated', properties: {} },
-        timelineActivityTypeMaps,
-      ),
-    ).toBe('updated');
-  });
 });
